@@ -1,0 +1,65 @@
+<div class="row">
+  <div class="col-sm-8">
+    <div class="nollywood-background-container"></div>
+  </div>
+  <div class="col-sm-4">
+    <div class="login-side-bar">
+      <div class="container">
+        <form class="login-form" action="/adminstratorbase/login" method="POST">
+          <span style="display: flex;">
+            <img class="landing-logo" src="/images/header.png" />
+            <h3 class="landing-logo-text">Admin</h3>
+          </span>
+          <% if(error != ''){ %>
+          <div
+            class="alert alert-warning alert-dismissible fade show"
+            role="alert"
+          >
+            <%= error %>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="alert"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <% } %>
+          <div class="form-group">
+            <input
+              id="email"
+              type="text"
+              class="form-control"
+              name="email"
+              placeholder="Email"
+              required="required"
+            />
+          </div>
+          <div class="form-group">
+            <input
+              id="password"
+              type="password"
+              class="form-control"
+              name="password"
+              placeholder="Password"
+              required="required"
+            />
+          </div>
+          <div class="form-group">
+            <button
+              type="submit"
+              class="btn btn-primary btn-lg btn-block login-btn"
+            >
+              Login
+            </button>
+          </div>
+        </form>
+        <div class="text-center">
+          <a href="#">Forgot Password?</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

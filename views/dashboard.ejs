@@ -1,0 +1,445 @@
+<link rel="stylesheet" href="/css/dashboard.css" />
+
+<div class="wrapper">
+  <div class="sidebar">
+    <nav class="menu" tabindex="0">
+      <div class="smartphone-menu-trigger"></div>
+      <header class="avatar">
+        <img src="/images/avatar.png" />
+        <h2>Gbolahan M</h2>
+      </header>
+      <ul>
+        <li tabindex="0" class="icon-dashboard"><span>Dashboard</span></li>
+        <a class="modal-achor" href="#login" data-toggle="modal"
+          ><li tabindex="0" class="icon-staff">
+            <span>Add Staff</span>
+          </li></a
+        >
+        <li tabindex="0" class="icon-users"><span>Users</span></li>
+        <a class="modal-achor" href="#appContentUpdate" data-toggle="modal"
+          ><li tabindex="0" class="icon-update">
+            <span>App content</span>
+          </li></a
+        >
+        <li tabindex="0" class="icon-notification">
+          <span>Notifications</span>
+        </li>
+        <a class="modal-achor" href="logout"><li tabindex="0" class="icon-logout">
+          <span>Logout</span>
+        </li></a>
+      </ul>
+    </nav>
+  </div>
+  <div class="main">
+    <div class="dash-header">
+      <h4 style="text-align: center;">
+        Last content update: 11:46pm 6th February, 2020
+      </h4>
+    </div>
+    <div class="quick-cards">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="card card-body shadow">
+            <h5 class="quick-cards-stat-intro">
+              <i class="fas fa-user"></i> Total Users
+            </h5>
+            <h1 class="quick-cards-stat-value">2501</h1>
+            <span
+              ><span style="color: green;">4%</span> up from last Week |
+              <span style="color: red;">1%</span> down from last Month
+            </span>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card card-body shadow">
+            <h5 class="quick-cards-stat-intro">
+              <i class="fas fa-user"></i> Average time
+            </h5>
+            <h1 class="quick-cards-stat-value">123.50</h1>
+            <span
+              ><span style="color: green;">4%</span> up from last Week |
+              <span style="color: red;">1%</span> down from last Month
+            </span>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card card-body shadow">
+            <h5 class="quick-cards-stat-intro">
+              <i class="fas fa-user"></i> Registered users
+            </h5>
+            <h1 class="quick-cards-stat-value">321</h1>
+            <span
+              ><span style="color: green;">4%</span> up from last Week |
+              <span style="color: red;">1%</span> down from last Month
+            </span>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card card-body shadow">
+            <h5 class="quick-cards-stat-intro">
+              <i class="fas fa-user"></i> Non registered users
+            </h5>
+            <h1 class="quick-cards-stat-value">1680</h1>
+            <span
+              ><span style="color: green;">4%</span> up from last Week |
+              <span style="color: red;">1%</span> down from last Month
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- USERS ACTIVITY -->
+    <div class="admin-card-container">
+    <div class="row">
+      <div class="col-sm-9 col-md-9">
+        <div class="card card-body shadow">
+          <div>
+            <h5 class="quick-cards-stat-intro">
+              <i class="fas fa-chart-area"></i> Users Activity trend
+            </h5>
+            <form style="width: 179px;">
+              <select class="form-control">
+                <option value="">Today</option>
+                <option value="">Last week</option>
+                <option value="">Last Month</option>
+
+              </select>
+            </form>
+
+            <div style="height: 500px; max-width: 100%;" id="usersActivityChartDiv"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-3 col-md">
+        <div class="card card-body shadow">
+          <div>
+            <h5 class="quick-cards-stat-intro">
+              <i class="fas fa-poll"></i> Peaks hours
+            </h5>
+            <table>
+              <tr>
+                <td>☀ Morning: </td>
+                <td>6:59am - 8:29pm</td>
+              </tr>
+              <tr>
+                <td>🌤 Afternoon: </td>
+                <td>2:40am - 4:00pm</td>
+              </tr>
+              <tr>
+                <td>🌑 Evening: </td>
+                <td>6:00am - 11:29pm</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="card card-body shadow">
+          <div>
+            <h5 class="quick-cards-stat-intro">
+              <i class="fas fa-poll"></i> Trending News
+            </h5>
+            <table class="breaking-news-table">
+              <tr>
+                <td> <span class="news-indicator"> >>> </span> BREAKING: Nigeria introduces single-entry visa for journalists, entertainers - TheCable</td>
+              </tr>
+              <tr>
+                <td> <span class="news-indicator"> >>> </span> Tesla is jumping yet again, soaring as much as 13% in trading following a 19% surge on Monday - CNBC</td>
+              </tr>
+              <tr>
+                <td ><span class="news-indicator"> >>> </span> Resurrected BlackBerry handsets from TCL to disappear from the market in August - Notebookcheck.net</td>
+              </tr>
+              <tr>
+                <td> <span class="news-indicator"> >>> </span> Tesla is jumping yet again, soaring as much as 13% in trading following a 19% surge on Monday - CNBC</td>
+              </tr>
+              <tr>
+                <td> <span class="news-indicator"> >>> </span> Resurrected BlackBerry handsets from TCL to disappear from the market in August - Notebookcheck.net</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- END USER ACTIVITY -->
+
+  <!-- APP DETAILS -->
+  <div class="app-details-card-container">
+    </div>
+    <!-- END APP DETAILS -->
+  </div>
+  </div>
+</div>
+
+
+<!-- Add Staff Modal -->
+  <div id="login" class="modal fade">
+    <div class="modal-dialog app-modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="avatar">
+            <img src="/images/avatar.png" alt="Avatar" />
+          </div>
+          <h4 class="modal-title">Add Staff</h4>
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-hidden="true"
+          >
+            &times;
+          </button>
+        </div>
+        <div class="modal-body">
+          <form id="addStaffForm">
+            <div id="alert-container"></div>
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                id="firstName"
+                placeholder="First name"
+                required="required"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                id="lastName"
+                placeholder="Last name"
+                required="required"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                id="email"
+                placeholder="Email"
+                required="required"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="password"
+                class="form-control"
+                id="password"
+                placeholder="Password"
+                required="required"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="password"
+                class="form-control"
+                id="password2"
+                placeholder="Confrim password"
+                required="required"
+              />
+            </div>
+            <div class="form-group">
+              <button
+                type="button"
+                onclick="sendStaffDetails()"
+                class="btn btn-primary btn-lg btn-block login-btn"
+              >
+                Create staff account
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <a href="#">iBrandTV</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Manual Update Modal -->
+  <div
+    class="modal fade"
+    id="appContentUpdate"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="appContentUpdate"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog app-modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">App content</h4>
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-hidden="true"
+          >
+            &times;
+          </button>
+        </div>
+        <div class="modal-body">
+          <% if(error != ''){ %>
+          <div
+            class="alert alert-warning alert-dismissible fade show"
+            role="alert"
+          >
+            <%= error %>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="alert"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <% } %>
+
+          <form id="manualContentUpdate">
+            <div id="update-modal-alert-container"></div>
+
+            <div class="form-group">
+              <h1>Select content type to update</h1>
+              <input autocomplete="off" type="checkbox" name="ibrand" id="ibrand" />
+              <label for="ibrand">iBrandTv Website</label><br />
+
+              <input autocomplete="off" type="checkbox" name="others" id="others" />
+              <label for="others">Other Sources</label><br />
+
+
+              <div class="tags">
+                <label for="ibrand">iBrandTV Website</label>
+                <label for="others">Other Sources</label>
+              </div>
+            </div>
+            <div class="form-group text-center">
+              <button type="button" onclick="manualContentUpdate()"  class="btn btn-primary btn-lg btn-block login-btn">
+                Update App content
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <a href="#">iBrandTV</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+  const sendStaffDetails = () =>{
+    let staffFirstname = $('#firstName').val()
+    let staffLastname = $('#lastName').val()
+    let staffEmail = $('#email').val()
+    let staffPassword = $('#password').val()
+    let staffPassword2 = $('#password2').val()
+    if(staffFirstname !== "" && staffLastname !== "" && staffEmail !== "" && staffPassword !== "" && staffPassword2 !== ""){
+      $.post('/adminstratorbase/addstaff', { 
+        firstName: staffFirstname,  
+        lastName: staffLastname,
+        email: staffEmail,
+        password: staffPassword,
+        password2: staffPassword2
+      }, (data)=> {
+        if(data.errors){
+          $('#alert-container').html('')
+          for(let i=0; i<data.errors.length; i++){
+            $('#alert-container').append(`
+            <div id="alert" class="alert alert-warning" role="alert">
+                 ${data.errors[i].msg}       
+            </div>
+            `)
+
+          }
+        }else{
+          $('#alert-container').html('')
+
+          $('#alert-container').html(`
+          <div id="alert" class="alert alert-success" role="alert">
+                 ${data.successMessage}       
+            </div>
+          `)
+          $('#addStaffForm').trigger("reset")
+
+        }
+      })
+    }
+  }
+</script>
+
+<script>
+const manualContentUpdate = () => {
+  let ibrand = $('#ibrand').is(':checked')
+  let others = $('#others').is(':checked')
+  const payload = { ibrand: ibrand, others: others}
+  
+  $.post('/adminstratorbase/manual-content-update', payload, (data)=>{
+    if(data.errors){
+      $('#update-modal-alert-container').html('')
+      $('#update-modal-alert-container').append(`
+      <div id="alert" class="alert alert-warning" role="alert">
+                 ${data.errors}       
+            </div>
+      `)
+
+    }else{
+      $('#update-modal-alert-container').html('')
+      $('#update-modal-alert-container').html(`
+          <div id="alert" class="alert alert-success" role="alert">
+                 ${data.successMessage}       
+            </div>
+          `)
+          $('#manualContentUpdate').trigger("reset")
+      
+    }
+  })
+
+}
+</script>
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script>
+google.charts.load('current', {packages: ['corechart', 'line']});
+google.charts.setOnLoadCallback(drawAxisTickColors);
+
+function drawAxisTickColors() {
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'X');
+      data.addColumn('number', 'Users');
+
+      data.addRows([
+      ['00:00', 285], ['01:00', 170], ['02:00', 490], ['03:00', 638], ['04:00', 189], ['05:00', 593], ['06:00', 532], ['07:00', 528], ['08:00', 348], ['09:00', 44], ['10:00', 124], ['11:00', 656], ['12:00', 585], ['13:00', 62], ['14:00', 173], ['15:00', 123], ['16:00', 586], ['17:00', 108], ['18:00', 350], ['19:00', 661], ['20:00', 359], ['21:00', 537], ['22:00', 543], ['23:00', 415]
+      ]);
+
+      var options = {
+        hAxis: {
+          title: 'Time',
+          textStyle: {
+            bold: true,
+            italic: true
+          },
+          titleTextStyle: {
+            bold: false,
+            italic: true
+          }
+        },
+        vAxis: {
+          title: 'Users Online',
+          textStyle: {
+            bold: true
+          },
+          titleTextStyle: {
+            bold: true
+          }
+        },
+        colors: ['#eb6864']
+      };
+      var chart = new google.visualization.AreaChart(document.getElementById('usersActivityChartDiv'));
+      chart.draw(data, options);
+    }
+</script>
